@@ -402,7 +402,8 @@ ul.no-bullet {
 html {
   font-size: 62.5%;
   font-family: "adriane", Georgia, serif;
-  color: #494C4E; }
+  color: #494C4E;
+  -webkit-font-smoothing: antialiased; }
 
 body:before, body:after {
   content: "";
