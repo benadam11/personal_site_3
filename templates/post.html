@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="hero inner-container">
+  <h4>{{ date.date }}</h4>
+	<h1>{{ headline }}</h1>
+	<!-- <h2 class="headline">{{ headline }} </h2> -->
+</section>
+<section class="blog-body border">
+  <div class="inner-container spacer">
+  	{% block body %}
+  		This is where the post contents is.
+  	{% endblock body %}
+  </div>  
+</section>  	
+
+{% include 'more-articles.html' %}
+
+{% endblock content %}

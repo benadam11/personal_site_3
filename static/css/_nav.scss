@@ -1,0 +1,65 @@
+nav { 
+  padding-top:4em;
+  padding-bottom:4em;
+}
+
+.nav-right{
+  padding-top:1.5em;
+  float:right;
+  display:inline-block;
+  vertical-align:middle;
+  // @include clearfix;
+}
+
+.list-item{
+  float:left;
+  margin-left:2em;
+  list-style:none;
+
+  a { 
+    font-size:1em;
+    color:$black;
+ }
+
+  a:hover{
+    border-bottom:2px solid $yellow;
+  }
+}
+
+.site-logo{
+  
+  svg {
+    width:60px;
+    height:60px;;
+    display:inline-block;
+    vertical-align:middle;
+    overflow:visible;
+  }
+
+  #logo-stroke{
+    @include transform(rotate(0deg));
+    @include transition (transform .5s ease-in-out);
+    @include transform-origin(center center);
+  }
+
+  &:hover #BA { fill:$yellow; }
+
+  &:hover #logo-stroke { 
+    @include transform(rotate(-90deg));
+    @include transform-origin(center center);
+    @include transition (transform .5s ease-in-out);
+    -webkit-backface-visibility:hidden;
+
+   }
+
+}
+
+
+.social-icon { 
+  display:none;
+  
+  a:hover { 
+    color: $yellow;
+    border-bottom: 0px;
+  }
+}

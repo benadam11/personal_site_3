@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="inner-container hero">
+	<h1>Hello, my name is Ben. I am a Designer / Front End Developer living in Tempe, AZ. </h1>
+</section>
+
+<section class="outer-container space-bottom">
+	<img src="{% static 'images/hero.jpg' %}" alt="Ben Hero">
+</section>
+
+<section class="inner-container space-bottom">
+
+	<h3>About:</h3>
+	
+	<p> I currently am working as a UX Designer at <a href="http://laneterralever.com" target="_blank" class="yellow">LaneTerralever</a>, which is where my passion for design and development converge. See my previous work history on <a href="https://www.linkedin.com/profile/view?id=99755347" class="yellow" target="_blank">LinkedIn</a>. Outside of work I have a beautiful wife and cat (obviously) and I am currently accepting some freelance work, so if you have a project, don’t hesitate to get in touch.</p>
+
+	<h3>Services:</h3>
+
+	<h4>UI/UX Design</h4>
+
+	<p>UI/UX involves planning and iterating the site's structure and layout.  Once the proper information architecture is in place, I design visual layer to create a beautiful user experience.</p>
+
+	<h4>Front End Development</h4>
+
+	<p>Front End Development is building out the visual components of a website. Using HTML, CSS , and Javascript, I build fast, interactive websites. This also may include integrating the CMS of your choice.</p> 
+
+	<h4>Brand & Collateral Design</h4>
+
+	<p>While most of my attention is on interactive projects, I do branding and collateral from time to time. This includes logo design, business cards, and other printed materials.</p>
+
+
+</section>
+
+{% include 'cta.html' %}
+
+{% endblock content %}

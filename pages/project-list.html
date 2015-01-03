@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <section class="inner-container hero">
+    <h1>Recent Projects: Samples of my freelance projects over the past year.</h1>
+  </section>
+
+  <section class="border blog-list">
+    <div class="inner-container">
+      <h3>Latest Projects: </h3>
+      <ul class="post-list no-bullet">
+        {% for post in projects %}
+          <li class="border-bottom"> 
+            <a href='/{{ post.path }}'>
+              <div class="card">
+                <img src='{{ post.thumbnail }}' alt='{{ post.title }}'>
+                <a href='/{{ post.path }}' class="cta-button overlay-button">See Project<span class="arrow-right">&#8594;</span></a>
+                <a class="overlay" href='/{{ post.path }}'></a>
+              </div>
+            </a>
+            <h4>{{ post.role }}</h4>
+            <a href='/{{ post.path }}'><p>{{ post.headline }} </p></a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+{% include 'cta.html' %}
+
+    
+{% endblock content %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+  <section class="inner-container hero">
+    <h1>The Blog: Thoughts on life, work and everything in between. </h1>
+  </section>
+
+  <section class="border blog-list">
+    <div class="inner-container">
+      <h3>Latest Blog Posts: </h3>
+      <ul class="post-list no-bullet">
+        {% for post in posts %}
+          <li class="border-bottom"> 
+            <h4>{{ post.date.date }}</h4>
+            <a href='/{{ post.path }}'><h2>{{ post.title }} </h2></a>
+            <a href='/{{ post.path }}' class="read-more">Read More<span class="arrow-right">&#8594;</span></a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+{% include 'cta.html' %}
+
+{% endblock content %}
