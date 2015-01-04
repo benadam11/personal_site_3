@@ -8,20 +8,26 @@ role: Design / Front End Development
 {% extends "project.html" %}
 {% block body %}
 
-<div class="inner-container spacer">
+<div class="inner-container">
 
-  {% filter markdown %}
+{% filter markdown %}
+### Project Background
 
-  Bubba's Bash is an annual benefit concert for the Bubba Watson Foundation. I created a responsive site in order to aid in their marketing efforts. The key objectives were to create 3 location specific pages that would allow users to quickly get information about the artists, and find links to purchase tickets and get directions to the event.
+Bubba's Bash is an annual benefit concert for the Bubba Watson Foundation. I created a responsive site in order to aid in their marketing efforts. The key objectives were to create 3 location specific pages that would allow users to quickly get information about the artists, and find links to purchase tickets and get directions to the event.
 
-  For this project I used Sketch for the wires / design and a build tool called Docpad that uses a combination of sass (which compiles to css), html and javascript to generate the static pages. Using simple static pages allowed for fast load times and it was easy to iterate the (responsive) design in browser. Visit the site here.
+For this project I used Sketch for the wires / design and a build tool called Docpad that uses a combination of sass (which compiles to css), html and javascript to generate the static pages. Using simple static pages allowed for fast load times and it was easy to iterate the (responsive) design in browser. <a href="http://bubba.benadam.me/phoenix/" target="_blank" class="yellow">Visit the site here.</a>
 
-  {% endfilter %}
+{% endfilter %}
 
 </div>
 
-<div class="outer-container spacer">
-  <img src="{% static 'images/bubbas_bash.jpg' %}" alt="Ben Hero">
+<div class="outer-container">
+  <div class="inner-container"><h3>Static Comps</h3></div>
+  <img src="{% static 'images/bubbas_bash.jpg' %}" alt="Bubbas Mockup">
+</div>
+
+<div class="outer-container space-bottom">
+  <img src="{% static 'images/bubbas_fullcomp.jpg' %}" alt="Bubbas Bash Full Comp">
 </div>
 
 {% endblock body %}

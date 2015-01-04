@@ -1,4 +1,4 @@
-title: Prosport Management: Branding for the sports agency that represents Bubba Watson.
+title: Prosport Management: Branding for an international sports agency.
 thumbnail: /static/images/prosport_thumbnail.jpg
 headline: Branding for the sports agency that represents Bubba Watson. 
 author: Ben Adam
@@ -10,18 +10,26 @@ date: 24-02-2014
 
 <div class="inner-container spacer">
 
-  {% filter markdown %}
+{% filter markdown %}
+### Project Background 
 
-  Bubba's Bash is an annual benefit concert for the Bubba Watson Foundation. I created a responsive site in order to aid in their marketing efforts. The key objectives were to create 3 location specific pages that would allow users to quickly get information about the artists, and find links to purchase tickets and get directions to the event.
+Prosport Management is a sports agency that represents well known golfers including Bubba Watson (who recently won the Masters), Aaron Badley, and Geoff Ogilvy. Our goal was to create a sophisticated look for their company that was flexible enough for them to expand their business to other sports.
 
-  For this project I used Sketch for the wires / design and a build tool called Docpad that uses a combination of sass (which compiles to css), html and javascript to generate the static pages. Using simple static pages allowed for fast load times and it was easy to iterate the (responsive) design in browser. Visit the site here.
+I developed a custom Sans Serif logotype based off of Edmondsans. I used a gray scale for their primary colors, and a green secondary pallet to be used on their website. I also developed brand guidelines, business cards, and letterhead for Prosport in time for the Masters.
 
-  {% endfilter %}
+
+{% endfilter %}
 
 </div>
 
 <div class="outer-container spacer">
-  <img src="{% static 'images/bubbas_bash.jpg' %}" alt="Ben Hero">
+  <div class="inner-container"> <h3>Logos & Colors</h3></div>
+  <img src="{% static 'images/prosport_logocolors.jpg' %}" alt="Brand Applications">
+</div>
+
+<div class="outer-container space-bottom">
+  <div class="inner-container"><h3>Brand Applications</h3></div>
+  <img src="{% static 'images/prosport_applications.jpg' %}" alt="Brand Applications">
 </div>
 
 {% endblock body %}

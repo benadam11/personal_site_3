@@ -3,7 +3,7 @@
 .border-bottom { border-bottom:1px solid $light-grey; }
 .yellow { color:$yellow; }
 .light-grey { color: $light-grey; }
-.space-bottom { margin-bottom: 6em; }
+.space-bottom { margin-bottom: 4em; }
 .spacer {
   padding-top:3em;
   padding-bottom:3em;
@@ -17,7 +17,7 @@ ul.no-bullet {
 
   li { 
     list-style:none;
-    margin-bottom:3em;
+    // margin-bottom:3em;
 
     &:last-child{
       border-bottom:0px;
