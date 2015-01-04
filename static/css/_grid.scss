@@ -1,5 +1,5 @@
 //Grid
-.outer-container { @include outer-container(90%); }
+.outer-container { @include outer-container($outer-container); }
 .inner-container { @include outer-container($inner-container); }
 
 .inner-container,

@@ -539,6 +539,7 @@ a {
   font-size: 1.5em;
   font-style: italic;
   margin: 0 1em;
+  margin-bottom: 1em;
   min-width: 10em;
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
@@ -570,7 +571,7 @@ a {
   padding-right: 10px; }
 
 .outer-container {
-  max-width: 90%;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto; }
   .outer-container::after {
