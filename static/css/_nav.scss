@@ -94,7 +94,7 @@ nav {
   position: relative;
   cursor: pointer;
   display: inline-block;
-  margin-top:1em;
+  margin-top:.85em;
 }
 
 .navigation-toggle-label {
@@ -125,13 +125,9 @@ nav {
   right: 0;
 }
 
-.navigation-toggle-icon:before {
-  top: 4px;
-}
+.navigation-toggle-icon:before { top: 4px; }
 
-.navigation-toggle-icon:after {
-  bottom: 4px;
-}
+.navigation-toggle-icon:after { bottom: 4px; }
 
 /*
  * This is where all the animation happens
@@ -144,9 +140,7 @@ nav {
   @include transition-timing-function(cubic-bezier(0.5, -0.5, 0.5, 1.5));
 }
 
-.navigation-toggle-icon {
-  @include transition-delay(0.125s);
-}
+.navigation-toggle-icon { @include transition-delay(0.125s); }
 
 .navigation-toggle-icon:before,
 .navigation-toggle-icon:after {
@@ -160,19 +154,11 @@ nav {
   }
   
   .navigation-toggle-icon:before,
-  .navigation-toggle-icon:after {
-    @include transition-delay(.125s);
-  }
+  .navigation-toggle-icon:after { @include transition-delay(.125s); }
   
-  .navigation-toggle-icon:before {
-    @include transform(translateY(13px) rotate(135deg));
-  }
+  .navigation-toggle-icon:before { @include transform(translateY(13px) rotate(135deg)); }
   
-  .navigation-toggle-icon {
-    border-color: transparent;
-  }
+  .navigation-toggle-icon { border-color: transparent; }
   
-  .navigation-toggle-icon:after {
-    @include transform(translateY(-13px) rotate(-135deg));
-  }
+  .navigation-toggle-icon:after { @include transform(translateY(-13px) rotate(-135deg)); }
 }

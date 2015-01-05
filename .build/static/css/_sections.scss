@@ -10,14 +10,26 @@ footer, .cta-section {
   padding-bottom:4em;
 }
 
-.blog-list{
+.blog-list, .project-list{
   padding-top:6em;
   padding-bottom:1em;
+}
+
+.project-list li {
+  padding-top:3em;
+  padding-bottom:1em;
+}
+
+.blog-list li {
+  padding-top:2em;
+  padding-bottom:3em;
 }
 
 .blog-body {
   padding-top:6em;
   padding-bottom:3em;
+
+  li { font-size:1.5em; }
 }
 
 .card { 

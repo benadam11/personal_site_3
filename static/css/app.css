@@ -556,7 +556,8 @@ a {
 
 .read-more {
   font-style: italic;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  margin-bottom: 2em; }
 
 .arrow-right, .arrow-left {
   display: inline-block;
@@ -688,7 +689,7 @@ nav {
   position: relative;
   cursor: pointer;
   display: inline-block;
-  margin-top: 1em; }
+  margin-top: .85em; }
 
 .navigation-toggle-label {
   font-family: "franklin-gothic-urw-cond", Arial, sans-serif;
@@ -786,13 +787,23 @@ footer, .cta-section {
   padding-top: 3em;
   padding-bottom: 4em; }
 
-.blog-list {
+.blog-list, .project-list {
   padding-top: 6em;
   padding-bottom: 1em; }
+
+.project-list li {
+  padding-top: 3em;
+  padding-bottom: 1em; }
+
+.blog-list li {
+  padding-top: 2em;
+  padding-bottom: 3em; }
 
 .blog-body {
   padding-top: 6em;
   padding-bottom: 3em; }
+  .blog-body li {
+    font-size: 1.5em; }
 
 .card {
   position: relative;
