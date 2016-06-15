@@ -2,11 +2,15 @@
   <div class="inner-container">
     <h1>See More Articles</h1>
     {% if prevPost %}
-        <a href='/{{ prevPost.path }}' class="cta-button"><span class="arrow-left">&#8592;</span> Previous </a>
+        <a href='/{{ prevPost.path }}' class="cta-button transition-link">
+          <span class="arrow-left">&#8592;</span> Previous 
+        </a>
     {% endif %}
 
     {% if nextPost %}
-      <a href='/{{ nextPost.path }}' class="cta-button"> Next <span class="arrow-right">&#8594;</span></a>
+      <a href='/{{ nextPost.path }}' class="cta-button transition-link">
+         Next <span class="arrow-right">&#8594;</span>
+      </a>
     {% endif %}  
     
   </div>

@@ -9,10 +9,14 @@
 	<link rel="shortcut icon" href="/static/images/favicon.ico">	
 	<link rel="stylesheet" href="/static/css/app.css">
 	<!-- Font Awesome -->
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Typekit code here -->
 	<script src="//use.typekit.net/oag8qun.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="/static/js/main.js"></script>
+	
 </head>
 	
 <body>
@@ -32,11 +36,13 @@
 </script>
 <!-- End Google Analytics -->
 
+
+
 <!-- Header -->
 <header>
   <div class="outer-container">
     <nav>
-      <a class="site-logo" href="/">
+      <a class="site-logo transition-link" href="/">
         <svg version="1.1" x="0px" y="0px" viewBox="-351.2 290.8 212.4 212.4" enable-background="new -351.2 290.8 212.4 212.4" xml:space="preserve">
         <g class="logo-stroke">
           <title>BA</title>
@@ -61,11 +67,11 @@
 
       </a>
       <ul class="nav-right">
-        <li class="list-item"><a href="/">Home</a></li>
-        <li class="list-item"><a  href="/project-list.html">Projects</a></li>
-        <li class="list-item"><a  href="/blog.html">Blog</a></li>
+        <li class="list-item"><a class="transition-link" href="/">Home</a></li>
+        <li class="list-item"><a class="transition-link" href="/project-list.html">Projects</a></li>
+        <li class="list-item"><a class="transition-link" href="/blog.html">Blog</a></li>
         <li class="list-item" id="social-click"><a  href="javascript:void(0)">Social</a></li>
-        <li class="list-item social-icon"><a  href="https://medium.com/@benadam11" target ="_blank">M</a></li>
+        <li class="list-item social-icon"><a  href="https://medium.com/@benadam11" target ="_blank"><i class="fa fa-medium"></i></a></li>
         <li class="list-item social-icon"><a  href="https://twitter.com/benadam11" target ="_blank"><i class="fa fa-twitter"></i></a></li>
         <li class="list-item social-icon"><a  href="https://dribbble.com/benadam11" target ="_blank"><i class="fa fa-dribbble"></i></a></li>
         <li class="list-item social-icon"><a  href="https://github.com/benadam11" target ="_blank"><i class="fa fa-github"></i></a></li>
@@ -83,9 +89,9 @@
 
     <div class="dropdown-menu">
       <ul class="mobile-menu no-bullet">
-        <li><a  href="/project-list.html">Projects</a></li>
-        <li><a  href="/blog.html">Blog</a></li>
-        <li><a  href="https://medium.com/@benadam11" target ="_blank">M - Medium </a></li>
+        <li><a class="transition-link" href="/project-list.html">Projects</a></li>
+        <li><a class="transition-link" href="/blog.html">Blog</a></li>
+        <li><a  href="https://medium.com/@benadam11" target ="_blank"><i class="fa fa-medium"></i> - Medium</a></li>
         <li><a  href="https://twitter.com/benadam11" target ="_blank"><i class="fa fa-twitter"></i> - Twitter </a></li>
         <li><a  href="https://dribbble.com/benadam11" target ="_blank"><i class="fa fa-dribbble"></i> - Dribbble </a></li>
         <li><a  href="https://github.com/benadam11" target ="_blank"> <i class="fa fa-github"></i> - Github</a></li>
@@ -107,21 +113,33 @@
       <ul class="post-list no-bullet">
         
           <li class="border-bottom"> 
+            <h4>June 15, 2016</h4>
+            <a class="transition-link" href='/posts/talk-links.html'><h2>Static Site Generator Talk Links </h2></a>
+            <a href='/posts/talk-links.html' class="read-more transition-link">Read More<span class="arrow-right">&#8594;</span></a>
+          </li>
+        
+          <li class="border-bottom"> 
+            <h4>May 23, 2015</h4>
+            <a class="transition-link" href='/posts/hiring-ux.html'><h2>Hiring a UX Designer </h2></a>
+            <a href='/posts/hiring-ux.html' class="read-more transition-link">Read More<span class="arrow-right">&#8594;</span></a>
+          </li>
+        
+          <li class="border-bottom"> 
             <h4>Nov. 25, 2013</h4>
-            <a href='/posts/great-to-good.html'><h2>Great to Good: Struggling to Believe Greatness is Worth It </h2></a>
-            <a href='/posts/great-to-good.html' class="read-more">Read More<span class="arrow-right">&#8594;</span></a>
+            <a class="transition-link" href='/posts/great-to-good.html'><h2>Great to Good: Struggling to Believe Greatness is Worth It </h2></a>
+            <a href='/posts/great-to-good.html' class="read-more transition-link">Read More<span class="arrow-right">&#8594;</span></a>
           </li>
         
           <li class="border-bottom"> 
             <h4>Oct. 11, 2013</h4>
-            <a href='/posts/lebron-creativity.html'><h2>Lebron James &amp; Creativity: A Guide to Creativity for the Left Brained </h2></a>
-            <a href='/posts/lebron-creativity.html' class="read-more">Read More<span class="arrow-right">&#8594;</span></a>
+            <a class="transition-link" href='/posts/lebron-creativity.html'><h2>Lebron James &amp; Creativity: A Guide to Creativity for the Left Brained </h2></a>
+            <a href='/posts/lebron-creativity.html' class="read-more transition-link">Read More<span class="arrow-right">&#8594;</span></a>
           </li>
         
           <li class="border-bottom"> 
             <h4>July 13, 2013</h4>
-            <a href='/posts/smart-phone-manifesto.html'><h2>Smartphone Manifesto: Tips for Meaningful Engagement in the Digital World </h2></a>
-            <a href='/posts/smart-phone-manifesto.html' class="read-more">Read More<span class="arrow-right">&#8594;</span></a>
+            <a class="transition-link" href='/posts/smart-phone-manifesto.html'><h2>Smartphone Manifesto: Meaningful Engagement in the Digital World </h2></a>
+            <a href='/posts/smart-phone-manifesto.html' class="read-more transition-link">Read More<span class="arrow-right">&#8594;</span></a>
           </li>
         
       </ul>
@@ -144,9 +162,6 @@
   <p>Copyright Ben Adam <span id="footer-date"></span></p>
 </footer>
 
-
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="/static/js/main.js"></script>
 
 	
 </body>

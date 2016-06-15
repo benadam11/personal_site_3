@@ -111,14 +111,14 @@ nav {
 }
 
 .navigation-toggle-icon {
-  border-bottom: 6px solid $black;
+  border-bottom: 4px solid $black;
   padding-top: 17px;
   display: block;
 }
 
 .navigation-toggle-icon:before,
 .navigation-toggle-icon:after {
-  border-top: 6px solid $black;
+  border-top: 4px solid $black;
   content: "";
   position: absolute;
   left: 0;
@@ -149,9 +149,7 @@ nav {
 }
 
 .navigation-target.clicked + .navigation-toggle {
-  .navigation-toggle-icon {
-    @include transition-delay(0s);
-  }
+  .navigation-toggle-icon { @include transition-delay(0s); }
   
   .navigation-toggle-icon:before,
   .navigation-toggle-icon:after { @include transition-delay(.125s); }

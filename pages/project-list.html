@@ -2,7 +2,7 @@
 {% block content %}
 
   <section class="inner-container hero">
-    <h1>Recent Projects: Samples of my freelance projects over the past year.</h1>
+    <h1>Recent Projects: Samples of some of my work from the past year.</h1>
   </section>
 
   <section class="border project-list">
@@ -11,11 +11,11 @@
       <ul class="post-list no-bullet">
         {% for post in projects %}
           <li class="border-bottom"> 
-            <a href='/{{ post.path }}'>
+            <a class="transition-link" href='/{{ post.path }}'>
               <div class="card">
                 <img src='{{ post.thumbnail }}' alt='{{ post.title }}'>
-                <a href='/{{ post.path }}' class="cta-button overlay-button">See Project<span class="arrow-right">&#8594;</span></a>
-                <a class="overlay" href='/{{ post.path }}'></a>
+                <a href='/{{ post.path }}' class="cta-button overlay-button transition-link">See Project<span class="arrow-right">&#8594;</span></a>
+                <a class="overlay transition-link" href='/{{ post.path }}'></a>
               </div>
             </a>
             <h4>{{ post.role }}</h4>

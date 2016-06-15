@@ -1,1 +1,6 @@
-{"port":8463}
+{
+    "aws-access-key": "AKIAJATMNSP4DP2L3AZQ",
+    "aws-bucket-name": "benadam.me",
+    "aws-bucket-website": "benadam.me.s3-website-us-east-1.amazonaws.com",
+    "port": 8463
+}

@@ -410,7 +410,7 @@ body:before, body:after {
   background: #494C4E;
   left: 0;
   right: 0;
-  height: 10px;
+  height: 8px;
   z-index: 10; }
 
 body:before {
@@ -420,8 +420,8 @@ body:after {
   bottom: 0; }
 
 body {
-  border-left: 10px solid #494C4E;
-  border-right: 10px solid #494C4E; }
+  border-left: 8px solid #494C4E;
+  border-right: 8px solid #494C4E; }
 
 h1, h2, h3, h4, h5, h6, li {
   font-weight: bold;

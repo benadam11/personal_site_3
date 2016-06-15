@@ -1,0 +1,78 @@
+//Sections
+.hero { 
+  padding-top:6em;
+  padding-bottom:6em;
+}
+
+footer, .cta-section {
+  text-align:center;
+  padding-top:3em;
+  padding-bottom:4em;
+}
+
+.blog-list, .project-list{
+  padding-top:6em;
+  padding-bottom:1em;
+}
+
+.project-list li {
+  padding-top:3em;
+  padding-bottom:1em;
+}
+
+.blog-list li {
+  padding-top:2em;
+  padding-bottom:3em;
+}
+
+.blog-body {
+  padding-top:6em;
+  padding-bottom:3em;
+
+  li { font-size:1.5em; }
+}
+
+.card { 
+  position:relative; 
+  margin-bottom:3em;
+
+  &:hover .overlay-button {
+    opacity:1;
+    @include transition (all .5s ease);
+    @include transform(translate(-50%, -50%));
+
+  }
+  &:hover .overlay{
+    opacity:.8;
+    @include transition (all .25s ease);
+
+  }
+
+  img{
+    margin:0 auto;
+    max-widht:100%;
+  }
+
+  .overlay-button {
+    opacity:0;
+    color:white;
+    text-align:center;
+    position:absolute;
+    top: 48%;
+    left: 48%;
+    @include transform(translate(-50%, -10%));
+    @include transition (all .25s ease);
+    z-index:3;
+  }
+
+  .overlay{
+    opacity:0;
+    position:absolute;
+    background-color:$black;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:2;
+  }
+
+}

@@ -9,10 +9,14 @@
 	<link rel="shortcut icon" href="{% static '/images/favicon.ico' %}">	
 	<link rel="stylesheet" href="{% static '/css/app.css' %}">
 	<!-- Font Awesome -->
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Typekit code here -->
 	<script src="//use.typekit.net/oag8qun.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="{% static '/js/main.js' %}"></script>
+	
 </head>
 	
 <body>
@@ -32,6 +36,8 @@
 </script>
 <!-- End Google Analytics -->
 
+
+
 {% include 'header.html' %}
 
 <div class="content">
@@ -42,10 +48,7 @@
 
 {% include 'footer.html' %}
 
-{% block scripts %}
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="{% static '/js/main.js' %}"></script>
-{% endblock scripts %}
+
 	
 </body>
 </html>

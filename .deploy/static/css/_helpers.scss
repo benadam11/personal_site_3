@@ -1,0 +1,27 @@
+//Helpers
+.border { border-top:1px solid $light-grey; }
+.border-bottom { border-bottom:1px solid $light-grey; }
+.yellow { color:$yellow; }
+.light-grey { color: $light-grey; }
+.space-bottom { margin-bottom: 4em; }
+.spacer {
+  padding-top:3em;
+  padding-bottom:3em;
+}
+
+ul.no-bullet { 
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-padding-start: 0px;
+  
+
+  li { 
+    list-style:none;
+    // margin-bottom:3em;
+
+    &:last-child{
+      border-bottom:0px;
+    }
+  }
+
+}

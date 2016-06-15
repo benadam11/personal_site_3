@@ -11,8 +11,8 @@
         {% for post in posts %}
           <li class="border-bottom"> 
             <h4>{{ post.date.date }}</h4>
-            <a href='/{{ post.path }}'><h2>{{ post.title }} </h2></a>
-            <a href='/{{ post.path }}' class="read-more">Read More<span class="arrow-right">&#8594;</span></a>
+            <a class="transition-link" href='/{{ post.path }}'><h2>{{ post.title }} </h2></a>
+            <a href='/{{ post.path }}' class="read-more transition-link">Read More<span class="arrow-right">&#8594;</span></a>
           </li>
         {% endfor %}
       </ul>
