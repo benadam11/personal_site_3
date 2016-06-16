@@ -1,4 +1,4 @@
-nav { 
+nav {
   padding-top:4em;
   padding-bottom:4em;
 }
@@ -17,18 +17,19 @@ nav {
   margin-left:2em;
   list-style:none;
 
-  a { 
+  a {
     font-size:1em;
     color:$black;
  }
 
   a:hover{
     border-bottom:2px solid $yellow;
+    opacity: 1;
   }
 }
 
 .site-logo{
-  
+
   svg {
     width:60px;
     height:60px;;
@@ -42,10 +43,11 @@ nav {
     @include transition (transform .5s ease-in-out);
     @include transform-origin(center center);
   }
-
+  &:hover { opacity: 1; }
+  
   &:hover #BA { fill:$yellow; }
 
-  &:hover #logo-stroke { 
+  &:hover #logo-stroke {
     @include transform(rotate(-90deg));
     @include transform-origin(center center);
     @include transition (transform .5s ease-in-out);
@@ -54,10 +56,10 @@ nav {
 }
 
 
-.social-icon { 
+.social-icon {
   display:none;
-  
-  a:hover { 
+
+  a:hover {
     color: $yellow;
     border-bottom: 0px;
   }
@@ -150,13 +152,13 @@ nav {
 
 .navigation-target.clicked + .navigation-toggle {
   .navigation-toggle-icon { @include transition-delay(0s); }
-  
+
   .navigation-toggle-icon:before,
   .navigation-toggle-icon:after { @include transition-delay(.125s); }
-  
+
   .navigation-toggle-icon:before { @include transform(translateY(13px) rotate(135deg)); }
-  
+
   .navigation-toggle-icon { border-color: transparent; }
-  
+
   .navigation-toggle-icon:after { @include transform(translateY(-13px) rotate(-135deg)); }
 }

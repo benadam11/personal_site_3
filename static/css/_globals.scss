@@ -1,28 +1,15 @@
 // Globals
-html{
+html {
   font-size:62.5%;
   font-family:$serif;
   color:$black;
   -webkit-font-smoothing:antialiased;
 }
 
-// body:before, body:after {
-//   content: "";
-//   position: fixed;
-//   background: $black;
-//   left: 0;
-//   right: 0;
-//   height: 8px;
-//   z-index:10;
-// }
-
-// body:before { top: 0; }
-
-// body:after { bottom: 0; }
 
 body {
-  background: $black;
-  padding:8px;
+  border: 8px solid $black;
+  margin: 0px;
 }
 
 h1,h2,h3,h4,h5,h6, li {
@@ -131,28 +118,28 @@ img {
 //Links and Buttons
 
 a {
-  color: $yellow;
+  color: $black;
   text-decoration:none;
   margin-bottom:1.25em;
 
-  &:hover { opactiy: .4; }
+  &:hover{ opacity: .4; }
+
 
   &:hover .arrow-right{
-    @include transform(translateX(5px));
-    @include transition (all .25s ease);
+    transform: translateX(5px);
+    transition: all .25s ease;
     display:inline-block;
   }
   &:hover .arrow-left{
-    @include transform(translateX(-5px));
-    @include transition (all .25s ease);
+    transform: translateX(-5px);
+    transition: all .25s ease;
     display:inline-block;
   }
 
 }
 
 .cta-button {
-  @include border-right-radius(5px);
-  @include border-left-radius(5px);
+  border-radius: 5px;
   border:1px solid $yellow;
   padding:1em 1.5em;
   display:inline-block;
@@ -161,11 +148,11 @@ a {
   margin:0 1em;
   margin-bottom:1em;
   min-width:10em;
-  @include transition (all .25s ease);
+  transition: all .25s ease;
 
   &:hover{
-    @include transform(scale(1.025));
-    @include transition (all .25s ease);
+    transform: scale(1.025);
+    transition : all .25s ease;
   }
 
 }
@@ -178,7 +165,7 @@ a {
 
 .arrow-right, .arrow-left {
   display:inline-block;
-  @include transition (all .25s ease);
+  transition: all .25s ease ;
 }
 
 .arrow-right{
