@@ -1,14 +1,15 @@
-//Set Date to Current Year
-$('#footer-date').html(new Date().getFullYear());
-
-// 
 $('html').hide()
 
 $(document).ready(function(){
 
+  //Set Date to Current Year
+  var date = new Date().getFullYear();
+  console.log(date)
+  $('#footer-date').html(date);
+
   $('html').fadeIn(300)
-	
-	// Social toggle 
+
+	// Social toggle
   $('#social-click').click(function(){
     $('.social-icon').toggle( 'slide' );
   });
@@ -25,7 +26,7 @@ $(document).ready(function(){
     }
   });
 
-  //Fade In Images On Load 
+  //Fade In Images On Load
   $('img').load(function() {
     $(this).fadeIn('slow');
   });
@@ -51,7 +52,5 @@ $(document).ready(function(){
     // prevent the default browser behavior.
     return false;
   });
-  
+
 });
-
-

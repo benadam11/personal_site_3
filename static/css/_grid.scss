@@ -1,9 +1,0 @@
-//Grid
-.outer-container { @include outer-container($outer-container); }
-.inner-container { @include outer-container($inner-container); }
-
-.inner-container,
-.outer-container {
-  padding-left:2em;
-  padding-right:2em;
-}

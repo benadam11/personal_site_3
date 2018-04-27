@@ -1,0 +1,26 @@
+title: Investment Calculator: a beautifully simple investment tool.
+thumbnail: /static/images/ic-thumb.jpg
+date: 11-01-2018
+headline: Investment Calculator: a beautifully simple investment tool.
+role: Design / Front End Development
+
+
+{% extends "project.html" %}
+{% block body %}
+
+<div class="inner-container">
+
+{% filter markdown %}
+### Project Background
+
+Investment Calculator <a href="https://investmentcalculator.io/" target="_blank" class="yellow"> (View the site here.)</a> is a beautifully simple calculator to help you calculate the potential value of your retirement investments and visualize their growth. Based on your inputs, we also make suggestions on how to increase your investment savings.
+{% endfilter %}
+
+</div>
+
+<div class="outer-container">
+  <div class="inner-container"><h3>Static Comps</h3></div>
+  <img src="{% static 'images/ic-home-2x.jpg' %}" alt="Investment Calculator">
+</div>
+
+{% endblock body %}

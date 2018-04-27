@@ -1,63 +1,67 @@
 nav {
-  padding-top:4em;
-  padding-bottom:4em;
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 
-.nav-right{
-  padding-top:1.5em;
-  float:right;
-  display:inline-block;
-  vertical-align:middle;
+.nav-right {
+  padding-top: 1.5em;
+  float: right;
+  display: inline-block;
+  vertical-align: middle;
   // @include clearfix;
-  @include media(min-width 320px max-width 480px) { display:none; }
+  @include media(min-width 320px max-width 480px) {
+    display: none;
+  }
 }
 
-.list-item{
-  float:left;
-  margin-left:2em;
-  list-style:none;
+.list-item {
+  float: left;
+  margin-left: 2em;
+  list-style: none;
 
   a {
-    font-size:1em;
-    color:$black;
- }
+    font-size: 1em;
+    color: $black;
+  }
 
-  a:hover{
-    border-bottom:2px solid $yellow;
+  a:hover {
+    border-bottom: 2px solid $yellow;
     opacity: 1;
   }
 }
 
-.site-logo{
-
+.site-logo {
   svg {
-    width:60px;
-    height:60px;;
-    display:inline-block;
-    vertical-align:middle;
-    overflow:visible;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: visible;
   }
 
-  #logo-stroke{
+  .logo-stroke {
     @include transform(rotate(0deg));
-    @include transition (transform .5s ease-in-out);
+    @include transition(transform 0.5s ease-in-out);
     @include transform-origin(center center);
   }
-  &:hover { opacity: 1; }
   
-  &:hover #BA { fill:$yellow; }
+  &:hover {
+    opacity: 1;
+  }
 
-  &:hover #logo-stroke {
+  &:hover #BA {
+    fill: $yellow;
+  }
+
+  &:hover .logo-stroke {
     @include transform(rotate(-90deg));
     @include transform-origin(center center);
-    @include transition (transform .5s ease-in-out);
-   }
-
+    @include transition(transform 0.5s ease-in-out);
+  }
 }
 
-
 .social-icon {
-  display:none;
+  display: none;
 
   a:hover {
     color: $yellow;
@@ -68,26 +72,32 @@ nav {
 // Mobile Styles
 
 .mobile-nav {
-  display:none;
-  float:right;
-  @include media(min-width 320px max-width 480px) { display:inline-block; }
+  display: none;
+  float: right;
+  @include media(min-width 320px max-width 480px) {
+    display: inline-block;
+  }
 }
 
 .dropdown-menu {
   display: none;
   text-align: left;
 
-  li{
+  li {
     list-style: none;
-    font-size:1.5em;
-    margin-bottom:.5em;
-    padding-left:10px;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    padding-left: 10px;
   }
 }
 
-.navigation-target { display: none; }
+.navigation-target {
+  display: none;
+}
 
-.mobile-menu-toggle{ float: right; }
+.mobile-menu-toggle {
+  float: right;
+}
 
 .navigation-toggle {
   width: 40px;
@@ -96,7 +106,7 @@ nav {
   position: relative;
   cursor: pointer;
   display: inline-block;
-  margin-top:.85em;
+  margin-top: 0.85em;
 }
 
 .navigation-toggle-label {
@@ -107,9 +117,9 @@ nav {
   text-align: center;
   display: block;
   position: relative;
-  text-transform:uppercase;
+  text-transform: uppercase;
   left: -60px;
-  bottom:15px;
+  bottom: 15px;
 }
 
 .navigation-toggle-icon {
@@ -121,15 +131,19 @@ nav {
 .navigation-toggle-icon:before,
 .navigation-toggle-icon:after {
   border-top: 4px solid $black;
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   right: 0;
 }
 
-.navigation-toggle-icon:before { top: 4px; }
+.navigation-toggle-icon:before {
+  top: 4px;
+}
 
-.navigation-toggle-icon:after { bottom: 4px; }
+.navigation-toggle-icon:after {
+  bottom: 4px;
+}
 
 /*
  * This is where all the animation happens
@@ -142,7 +156,9 @@ nav {
   @include transition-timing-function(cubic-bezier(0.5, -0.5, 0.5, 1.5));
 }
 
-.navigation-toggle-icon { @include transition-delay(0.125s); }
+.navigation-toggle-icon {
+  @include transition-delay(0.125s);
+}
 
 .navigation-toggle-icon:before,
 .navigation-toggle-icon:after {
@@ -151,14 +167,24 @@ nav {
 }
 
 .navigation-target.clicked + .navigation-toggle {
-  .navigation-toggle-icon { @include transition-delay(0s); }
+  .navigation-toggle-icon {
+    @include transition-delay(0s);
+  }
 
   .navigation-toggle-icon:before,
-  .navigation-toggle-icon:after { @include transition-delay(.125s); }
+  .navigation-toggle-icon:after {
+    @include transition-delay(0.125s);
+  }
 
-  .navigation-toggle-icon:before { @include transform(translateY(13px) rotate(135deg)); }
+  .navigation-toggle-icon:before {
+    @include transform(translateY(13px) rotate(135deg));
+  }
 
-  .navigation-toggle-icon { border-color: transparent; }
+  .navigation-toggle-icon {
+    border-color: transparent;
+  }
 
-  .navigation-toggle-icon:after { @include transform(translateY(-13px) rotate(-135deg)); }
+  .navigation-toggle-icon:after {
+    @include transform(translateY(-13px) rotate(-135deg));
+  }
 }
