@@ -1,4 +1,4 @@
-$('html').hide()
+// $('html').hide()
 
 $(document).ready(function(){
 
@@ -7,7 +7,7 @@ $(document).ready(function(){
   console.log(date)
   $('#footer-date').html(date);
 
-  $('html').fadeIn(300)
+  // $('html').fadeTo(500, 1)
 
 	// Social toggle
   $('#social-click').click(function(){
@@ -43,11 +43,11 @@ $(document).ready(function(){
         return;
     }
 
-    // fade out content
-    $('html').fadeOut(300, function () {
-        // when the animation is complete, set the new location
-        location = newUrl;
-    });
+    // // fade out content
+    // $('html').fadeto(2000, 0, function () {
+    //     // when the animation is complete, set the new location
+    //     location = newUrl;
+    // });
 
     // prevent the default browser behavior.
     return false;

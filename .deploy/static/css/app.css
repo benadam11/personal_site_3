@@ -715,8 +715,7 @@ nav {
   transition: transform .4s ease-in-out;
 }
 .site-logo:hover .logo-text {
-  fill: #f5c453;
-  transform: rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
   transform-origin: center;
 }
 .site-logo:hover #logo-stroke {
