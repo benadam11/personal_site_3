@@ -1,6 +1,6 @@
 .build
 .deploy
-static/images
-static/fonts
+# static/images
+# static/fonts
 rootkey.csv
 config.json
