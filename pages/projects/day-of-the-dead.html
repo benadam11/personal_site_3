@@ -1,0 +1,28 @@
+title: Day of the Dead
+thumbnail: /static/images/dotd-thumb.jpg
+date: 14-09-2018
+headline: Day of the Dead is a rare holiday for celebrating death and life.
+role: Interaction Design / Front End Development
+
+
+{% extends "project.html" %}
+{% block body %}
+
+<div class="inner-container">
+
+{% filter markdown %}
+### Project Background
+
+This is a fun side project I worked on with Caleb Barclay. 
+
+Day of the Dead <a href="https://dayofthedead.holiday/" target="_blank" class="yellow"> (View the site here to learn about Dia de Los Meurtos)</a> 
+{% endfilter %}
+
+</div>
+
+<div class="outer-container">
+  <div class="inner-container"><h3>Static Comps</h3></div>
+  <img src="{% static 'images/dotd-hero.jpg' %}" alt="https://dayofthedead.holiday hero image">
+</div>
+
+{% endblock body %}
