@@ -1,5 +1,5 @@
 .build
-.deploy
+# .deploy
 # static/images
 # static/fonts
 rootkey.csv
