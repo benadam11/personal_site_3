@@ -423,7 +423,7 @@ th {
 }
 
 .yellow {
-  color: #f5c453;
+  color: #F6AC00;
 }
 
 .light-grey {
@@ -503,7 +503,7 @@ h4 {
   font-size: 1.35em;
   line-height: 1em;
   margin-bottom: 1.25em;
-  color: #f5c453;
+  color: #F6AC00;
   text-transform: uppercase;
 }
 
@@ -551,10 +551,10 @@ blockquote:after {
   width: 100px;
 }
 blockquote:before {
-  border-top: 1px solid #f5c453;
+  border-top: 1px solid #F6AC00;
 }
 blockquote:after {
-  border-bottom: 1px solid #f5c453;
+  border-bottom: 1px solid #F6AC00;
 }
 
 img {
@@ -576,6 +576,8 @@ a {
   color: #494c4e;
   text-decoration: none;
   margin-bottom: 1.25em;
+  font-weight: bold;
+  text-decoration: underline;
 }
 a:hover {
   opacity: 0.4;
@@ -593,7 +595,7 @@ a:hover .arrow-left {
 
 .cta-button {
   border-radius: 5px;
-  border: 1px solid #f5c453;
+  border: 1px solid #F6AC00;
   padding: 1em 1.5em;
   display: inline-block;
   font-size: 1.5em;
@@ -681,9 +683,10 @@ nav {
 .list-item a {
   font-size: 1em;
   color: #494c4e;
+  text-decoration: none;
 }
 .list-item a:hover {
-  border-bottom: 2px solid #f5c453;
+  border-bottom: 2px solid #F6AC00;
   opacity: 1;
 }
 
@@ -728,7 +731,7 @@ nav {
   display: none;
 }
 .social-icon a:hover {
-  color: #f5c453;
+  color: #F6AC00;
   border-bottom: 0px;
 }
 
@@ -866,6 +869,10 @@ footer,
 .project-list li {
   padding-top: 3em;
   padding-bottom: 1em;
+}
+
+.post-list li a{
+  text-decoration: none;
 }
 
 .blog-list li {

@@ -1,37 +1,66 @@
-{% extends "base.html" %}
-{% block content %}
+{% extends "base.html" %} {% block content %}
 
 <section class="inner-container hero">
-	<h1>Hello, my name is Ben. I am a Designer / Front End Developer living in Tempe, AZ. </h1>
+  <h1>
+    Hello, my name is Ben. I am a Designer / Front End Developer living in
+    Tempe, AZ.
+  </h1>
 </section>
 
 <section class="outer-container space-bottom">
-	<img src="{% static 'images/hero.jpg' %}" alt="Ben Hero">
+  <img src="{% static 'images/hero.jpg' %}" alt="Ben Hero" />
 </section>
 
 <section class="inner-container space-bottom">
+  <h3>About:</h3>
 
-	<h3>About:</h3>
+  <p>
+    I currently am working as a UX Engineer at
+    <a href="http://godaddy.com" target="_blank" class="yellow">GoDaddy</a>,
+    which is where my passion for design and development converge. See my
+    previous work history on
+    <a
+      href="https://www.linkedin.com/in/benjaminadam/"
+      class="yellow"
+      target="_blank"
+      >LinkedIn</a
+    >. Outside of work I have a beautiful wife and cat (obviously). I am also
+    working on a few side projects including
+    <a href="https://investmentcalculator.io/" target="_blank" class="yellow"
+      >Investment Calculator</a
+    >
+    (a simple tool to teach people about investing) and
+    <a href="https://dayofthedead.holiday/" target="_blank" class="yellow">
+      dayofthedead.holiday</a
+    >. Currently I am not accepting freelance work, but I'd love to get coffee
+    and get to know you, so don’t hesitate to get in touch.
+  </p>
 
-	<p> I currently am working as a UX Engineer at <a href="http://godaddy.com" target="_blank" class="yellow">GoDaddy</a>, which is where my passion for design and development converge. See my previous work history on <a href="https://www.linkedin.com/profile/view?id=99755347" class="yellow" target="_blank">LinkedIn</a>. Outside of work I have a beautiful wife and cat (obviously). I am also working on a few side projects including <a href="https://investmentcalculator.io/" target="_blank" class="yellow">Investment Calculator</a> (a simple tool to teach people about investing) and <a href="https://dayofthedead.holiday/" target="_blank" class="yellow"> dayofthedead.holiday</a>. Currently I am not accepting freelance work, but I'd love to get coffee and get to know you, so don’t hesitate to get in touch.</p>
+  <h3>Services:</h3>
 
-	<h3>Services:</h3>
+  <h4>UI/UX Design</h4>
 
-	<h4>UI/UX Design</h4>
+  <p>
+    UI/UX involves planning and iterating a site's structure and layout. Once
+    the proper information architecture is in place, I design the visual layer
+    to create a beautiful user experience.
+  </p>
 
-	<p>UI/UX involves planning and iterating a site's structure and layout.  Once the proper information architecture is in place, I design the visual layer to create a beautiful user experience.</p>
+  <h4>Front End Development</h4>
 
-	<h4>Front End Development</h4>
+  <p>
+    Front End Development is building out the visual components of a website.
+    Using HTML, CSS , and Javascript, I build fast, interactive websites. This
+    also may include integrating a CMS.
+  </p>
 
-	<p>Front End Development is building out the visual components of a website. Using HTML, CSS , and Javascript, I build fast, interactive websites. This also may include integrating a CMS.</p>
+  <h4>Brand & Collateral Design</h4>
 
-	<h4>Brand & Collateral Design</h4>
-
-	<p>While most of my attention is on interactive projects, I do branding and collateral from time to time. This includes logo design, business cards, and other printed materials.</p>
-
-
+  <p>
+    While most of my attention is on interactive projects, I do branding and
+    collateral from time to time. This includes logo design, business cards, and
+    other printed materials.
+  </p>
 </section>
 
-{% include 'cta.html' %}
-
-{% endblock content %}
+{% include 'cta.html' %} {% endblock content %}
