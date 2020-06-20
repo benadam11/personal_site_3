@@ -1,6 +1,6 @@
 html {
   font-size: 62.5%;
-  font-family: 'Libre Baskerville', Georgia, serif;
+  font-family: Georgia, serif;
   color: #494c4e;
   -webkit-font-smoothing: antialiased;
 }
@@ -23,7 +23,7 @@ li {
 
 h3,
 h4 {
-  font-family: 'Namun Gothic', Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: 700;
 }
 
