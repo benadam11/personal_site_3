@@ -66,7 +66,7 @@ def preBuild(site):
     POSTS = sorted(POSTS, key=lambda x: x['date'])
     POSTS.reverse()
 
-    indexes = range(0, len(POSTS))
+    indexes = xrange(0, len(POSTS))
 
     for i in indexes:
         if i+1 in indexes: POSTS[i]['prevPost'] = POSTS[i+1]

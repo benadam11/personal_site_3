@@ -63,7 +63,7 @@ def preBuild(site):
     Global["posts"] = sorted(Global["posts"], key=lambda x: x.get("date"))
     Global["posts"].reverse()
 
-    indexes = range(0, len(Global["posts"]))
+    indexes = xrange(0, len(Global["posts"]))
 
     for i in indexes:
         if i+1 in indexes:
@@ -90,7 +90,7 @@ def _convertDate(date_string, path):
     try:
         return datetime.datetime.strptime(date_string,
                                           Global["config"]["date_format"])
-    except Exception as e:
+    except Exception, e:
         logging.warning("Date format not correct for page %s, should be %s\n%s"
                         % (path, Global["config"]["date_format"], e))
 
