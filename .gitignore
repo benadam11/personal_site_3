@@ -3,3 +3,6 @@
 rootkey.csv
 config.json
 info.txt
+
+.DS_Store
+*.pyc
